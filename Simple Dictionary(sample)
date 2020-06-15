@@ -1,0 +1,9 @@
+dict1 = {"Darshan":"Bothra","Griyansh":"Kaushik"}
+word = input("Enter Darshan or Griyansh:\n")
+print(dict1[word])
+
+# You can add anything , edit it , update it  cuz its just for reference
+
+
+
+# inspired by YouTube Channel ~CodeWithHarry~ 
