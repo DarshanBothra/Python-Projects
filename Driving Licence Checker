@@ -1,0 +1,12 @@
+# Age Checker For Driving Licence
+person_age = int(input("Enter your Age :\n"))
+print("Your age is",person_age,"so,")
+if person_age>18 and person_age<101:
+    print("You can Drive a Car")
+elif person_age == 18:
+    print("You are Eligable but You will be physically checked first")
+else :
+    print("You cannot drive a car")
+    
+#Inspired By YouTube Channel ~CodeWithHarry~
+# GitHub: @CodeWithHarry
