@@ -1,0 +1,44 @@
+# Faulty Calculator
+'''
+It performs all calculations correct but only some are wrong(you can add the onse which are in exam).
+For Eg in this case 45*3(or 3*45)=555 , and
+59 +6 (or 6+59)=77, and
+56/6 = 4
+'''
+print("Welcome to The Calculator : Developed by Darshan Bothra")
+print("For Addition Enter '+'\nFor Subtraction '-'\nFor Multiplication '*'\nFor Division '/'\nFor Exponential '**'")
+inp_operator = input("Which Operator do you want to use? :")
+inp_num1 = int(input("Enter First Number :\n"))
+inp_num2 = int(input("Enter Second Number :\n"))
+
+if inp_operator=="*" and inp_num1==45 and inp_num2==3 or inp_operator=="*" and inp_num1==3 and inp_num2==45:
+    print("Your Answer is : 555")
+
+elif inp_operator=="+" and inp_num1==59 and inp_num2==6 or inp_num2==59 and inp_num1==6 and inp_operator=="+":
+    print("Your Answer is : 77")
+
+elif inp_operator == "/" and inp_num1 == 56 and inp_num2 == 6:
+    print("Your Answer is : 4")
+
+elif inp_operator=="+":
+    print("Your answer is :",inp_num1 + inp_num2)
+
+elif inp_operator=="-":
+    print("Your answer is :",inp_num1 - inp_num2)
+
+elif inp_operator == "*" :
+        print("Your answer is :", inp_num1 * inp_num2)
+
+elif inp_operator == "/":
+            print("Your answer is :", inp_num1 / inp_num2)
+
+elif inp_operator=="**":
+    print("Your answer is :",inp_num1 ** inp_num2)
+
+else :
+    print("Error!!Pls Check Your Input")
+    
+    
+
+# Inspired by YouTube Channel~codeWithHarry~
+# @CodeWithHarry:GitHub
