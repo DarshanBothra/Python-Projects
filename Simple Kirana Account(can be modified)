@@ -1,0 +1,30 @@
+# Kirana Account / List / Anything You want to call it (PLs Forgive me for less knowledge of vocabulary)
+
+grocery=["Bhindi","Chips","Rice","Lollypop","Aata"]
+item_buy = input("What do you want to buy?\n")
+item_buy = item_buy.capitalize()
+if item_buy in grocery:
+    if item_buy=="Bhindi":
+        print("Okay,its for ₹50/kg")
+
+    elif item_buy=="Chips":
+        print("Okay,its for ₹10/packet")
+
+    elif item_buy=="Rice":
+        print("Okay,its for ₹60/kg")
+
+    elif item_buy=="LOllypop":
+        print("Okay,its for ₹5/piece")
+
+    elif item_buy=="Aata":
+        print("Okay,its for ₹50/kg")
+
+    elif item_buy=="Chips":
+        print("Okay,its for ₹10/packet")
+
+else :
+    print("Sorry we don't have",item_buy)
+    
+    
+# Inspired by YouTube Channel ~CodeWithHarry~ 
+GitHub : @CodeWithHarry
