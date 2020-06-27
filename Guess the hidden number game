@@ -1,9 +1,10 @@
-print("Welcome to \"Find The Hidden Number Game\" Developed by Darshan Bothra")
-
+ print("Welcome to \"Find The Hidden Number Game\" Developed by Darshan Bothra")
 print("In this game a number will be hidden and\n you will have to find it by entering a number again and again ."
       "\nClues will be given accordingly ")
 
 hid_num = 14
+
+num_guess = 9
 
 while(True):
 
@@ -14,20 +15,46 @@ while(True):
         break
 
     elif inp_num<14 and inp_num>=0:
-        print("Please enter a greater number")
+        num_guess = num_guess-1
+
+        if num_guess == 0:
+            print("You are OUT of Guesses ! GAME OVER !")
+            break
+
+        else:
+            print("Please enter a greater number")
+            print("Guesses left", num_guess )
         print("-----x-----")
         continue
 
     elif inp_num>14 and inp_num<=100:
-        print("Please enter a smaller number")
-        print("-----x-----")
+
+
+        num_guess = num_guess - 1
+
+        if num_guess == 0:
+            print("You are OUT of Guesses ! GAME OVER !")
+            break
+
+        else:
+            print("Please enter a smaller number")
+            print("Guesses left", num_guess  )
+
         continue
     else :
 
         print("Enter a number greater than 0 and smaller than 100")
+
+        if num_guess == 0:
+            print("You are OUT of Guesses ! GAME OVER !")
+            break
+
+        else:
+            num_guess = num_guess - 1
+            print("Guesses left", num_guess  )
         print("-----x-----")
-    continue
-    
+        continue
+
 print("Thank you for playing this game")
 
 
