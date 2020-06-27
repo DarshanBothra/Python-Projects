@@ -1,0 +1,34 @@
+print("Welcome to \"Find The Hidden Number Game\" Developed by Darshan Bothra")
+
+print("In this game a number will be hidden and\n you will have to find it by entering a number again and again ."
+      "\nClues will be given accordingly ")
+
+hid_num = 14
+
+while(True):
+
+    inp_num = int(input("Enter a Number:\n"))
+
+    if inp_num ==14:
+        print("Congratulatins you found the hidden number")
+        break
+
+    elif inp_num<14 and inp_num>=0:
+        print("Please enter a greater number")
+        print("-----x-----")
+        continue
+
+    elif inp_num>14 and inp_num<=100:
+        print("Please enter a smaller number")
+        print("-----x-----")
+        continue
+    else :
+
+        print("Enter a number greater than 0 and smaller than 100")
+        print("-----x-----")
+    continue
+    
+print("Thank you for playing this game")
+
+
+#Inspired by YouTube channel~CodeWithHarry~
