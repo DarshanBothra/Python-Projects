@@ -1,0 +1,17 @@
+while(True):
+    x = int(input("Enter a number:\n"))
+    if x>100:
+        print("OK This number is greater than hundered")
+        break
+    elif x==100:
+        print("You are close")
+        print("------x------")
+        continue
+    else:
+        print("Enter a larger number")
+        print("------x------")
+        continue
+        
+        
+        # Inspired by YouTube Channel ~CodeWithHarry~
+        
