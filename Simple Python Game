@@ -1,0 +1,102 @@
+#  Intermediate Apple Picker Game Using Python
+
+from random import choice
+
+def yn():
+    print("Enter 'y' for Yes or 'n' for No")
+
+
+gold = 0
+apple = 0
+
+print("Welcome to the apple picker game! made by - Darshan Bothra\n")
+print("Its completely random that you find an apple or a store to sell it!"
+      "\nLets see whether you become rich by selling apples!\n")
+print("1 apple has price of 40 gold coins in the market!\n")
+print("Lets Begin with the game now!")
+
+
+fnd = ["yes", "no", "no", "no", "no"]
+while True:
+    print("----------\n")
+    fnd_ok = choice(fnd)
+
+    if fnd_ok == "yes":
+        apple = apple + 1
+        print(f"Hurrah! You found an apple!\nNow you have: {apple}apple(s)")
+        if apple >= 1:
+
+            yn()
+            y_n = input("Do you want to continue to find the apples : ")
+            if y_n == "y":
+
+                print(f"Alright then! Lets continue to find the apples.\nYou have {apple} apples.\nand {gold} gold")
+            elif y_n == "n":
+                yn()
+                x = input("OK! Do you want to sell the apple(s) : ")
+                if x == "n":
+                    yn()
+                    y = input("Do You want to continue the game! : ")
+                    if y == "n":
+                        yn()
+                        z = input("Are you sure! : ")
+                        if z == "y":
+                            print("OK! Thanks for playing the game!")
+                            break
+                        elif z == "n":
+                            print("OK! Lets Continue!")
+                        else:
+                            print("Error! Check Your Input!")
+
+                    elif y == "y":
+                        print("OK! Lets Continue!")
+                    else:
+                        print("Error! Check Your Input!")
+
+                elif x == "y":
+                    gold = gold + 40
+                    apple = apple - 1
+                    print(f"Your apple was sold for 40 gold!\nNow you have {apple}.\nand{gold}")
+            else:
+                print("Error! Check Your Input!")
+
+
+    else:
+        print(f"No apple here! You have : {apple} apples")
+        if apple >= 1:
+
+            yn()
+            y_n = input("Do you want to continue to find the apples : ")
+            if y_n == "y":
+
+                print(f"Alright then! Lets continue to find the apples.\nYou have {apple} apples.\nand {gold} gold")
+            elif y_n == "n":
+                yn()
+                x = input("OK! Do you want to sell the apple(s) : ")
+                if x == "n":
+                    yn()
+                    y = input("Do You want to continue the game! : ")
+                    if y == "n":
+                        yn()
+                        z = input("Are you sure! : ")
+                        if z == "y":
+                            print("OK! Thanks for playing the game!")
+                            break
+                        elif z == "n":
+                            print("OK! Lets Continue!")
+                        else:
+                            print("Error! Check Your Input!")
+
+                    elif y == "y":
+                        print("OK! Lets Continue!")
+                    else:
+                        print("Error! Check Your Input!")
+
+                elif x == "y":
+                    gold = gold + 40
+                    apple = apple - 1
+                    print(f"Your apple was sold for 40 gold!\nNow you have {apple}.\nand{gold}")
+            else:
+                print("Error! Check Your Input!")
+
+    print("\n----------\n")
