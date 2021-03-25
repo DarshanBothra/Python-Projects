@@ -1,0 +1,11 @@
+'''
+A python program to find out file size of any file in GB, simple code
+'''
+
+import os
+
+file_stat = os.stat(r'D:/Darshan/Anime/Kimi No Na Wa.mp4')
+file_size = (((int(file_stat.st_size)/1024)/1024)/1024)
+
+file_size = str(file_size)
+print(file_size[0:4], "GB")
